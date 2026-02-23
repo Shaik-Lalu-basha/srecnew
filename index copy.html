@@ -2273,99 +2273,18 @@
 
       <div class="hero-right">
         <div class="campus-wrap">
+          <div class="campus-img-card">
+            <div class="img-clip">
+              <img src="srec.jpg" alt="Santhiram Engineering College Campus" />
+              <div class="campus-overlay">
+                <h3>Santhiram Engineering College</h3>
+                <p>Nandyal, Andhra Pradesh &middot; Est. 2002</p>
+              </div>
+            </div>
 
-          <div class="glass-slider-card">
-            <div class="glass-slider-track">
-
-              <div class="slide"><img src="srec.jpg" alt=""></div>
-              <div class="slide"><img src="srec0.jpg" alt=""></div>
-              <div class="slide"><img src="srec2.jpg" alt=""></div>
-              <div class="slide"><img src="srec1.jpg" alt=""></div>
-
-            </div>s
           </div>
-
         </div>
       </div>
-      <style>
-        /* GLASS CARD */
-        .glass-slider-card {
-          width: 520px;
-          height: 320px;
-          border-radius: 26px;
-          position: relative;
-          overflow: hidden;
-
-          backdrop-filter: blur(18px);
-          background: rgba(255, 255, 255, 0);
-          border: 1px solid rgba(255, 255, 255, 0);
-          box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
-        }
-
-        /* SLIDER TRACK */
-        .glass-slider-track {
-          display: flex;
-          height: 100%;
-          transition: transform 0.9s ease-in-out;
-        }
-
-        /* SLIDE */
-        .slide {
-          min-width: 100%;
-          height: 100%;
-          position: relative;
-        }
-
-        .slide img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        /* 🔥 NAVY SIDE FADE OVERLAY */
-        .glass-slider-card::before,
-        .glass-slider-card::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          width: 80px;
-          height: 100%;
-          z-index: 2;
-          pointer-events: none;
-        }
-
-        /* LEFT NAVY FADE */
-        .glass-slider-card::before {
-          left: 0;
-          background: linear-gradient(to right,
-              rgba(10, 22, 55, 0.95),
-              rgba(10, 22, 55, 0.6),
-              transparent);
-        }
-
-        /* RIGHT NAVY FADE */
-        .glass-slider-card::after {
-          right: 0;
-          background: linear-gradient(to left,
-              rgba(10, 22, 55, 0.95),
-              rgba(10, 22, 55, 0.6),
-              transparent);
-        }
-      </style>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-          let index = 0;
-          const track = document.querySelector(".glass-slider-track");
-          const slides = document.querySelectorAll(".slide");
-
-          setInterval(() => {
-            index = (index + 1) % slides.length;
-            track.style.transform = `translateX(-${index * 100}%)`;
-          }, 3200);
-
-        });
-      </script>
     </div>
 
     <div class="scroll-ind">
